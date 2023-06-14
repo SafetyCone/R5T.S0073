@@ -1,13 +1,15 @@
 using System;
+using System.Threading.Tasks;
 
 
 namespace R5T.S0073
 {
     class Program
     {
-        static void Main()
+        static async Task Main()
         {
-            Console.WriteLine("Hello World!");
+            //await RepositoryScripts.Instance.Create_Repository();
+            await RepositoryScripts.Instance.Delete_Repository();
         }
     }
 }
