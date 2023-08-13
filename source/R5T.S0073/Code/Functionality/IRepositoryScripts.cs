@@ -177,7 +177,7 @@ namespace R5T.S0073
 
             async Task ApplicationContextOperation(IApplicationContext applicationContext)
             {
-                await Instances.RepositoryOperations.Create_Repository(
+                await Instances.RepositoryOperations.Create_Repository_WithoutGitIgnore(
                     repositoryName,
                     repositoryDescription,
                     repositoryOwner,
